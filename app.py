@@ -114,8 +114,8 @@ if input_method == "Chromosome Position":
             with tab1:
                 st.subheader("Variant Effect Prediction")
                 
-                # This would connect to actual prediction in production
-                # For demo, we'll create sample data
+                # todo:  connect to actual prediction in production
+                #  demo sample data
                 prediction_result = {
                     "model": "GenX 2.0",
                     "effect": "Likely Pathogenic",
@@ -152,8 +152,8 @@ if input_method == "Chromosome Position":
             with tab2:
                 st.subheader("ClinVar Data")
                 
-                # In production, this would call the actual ClinVar API
-                # For demo, we'll create sample data
+                # TODO:production, call the actual ClinVar API
+                # demo sample data
                 clinvar_conditions = [
                     "Hereditary breast and ovarian cancer syndrome",
                     "Breast-ovarian cancer, familial, susceptibility to, 1",
@@ -190,7 +190,7 @@ if input_method == "Chromosome Position":
             with tab3:
                 st.subheader("Ensembl VEP Data")
                 
-                # In production, this would call the actual Ensembl API
+                # TODO: call the  Ensembl API
                 # demo sample data
                 ensembl_data = {
                     "gene_id": "ENSG00000012048",
@@ -368,4 +368,4 @@ if prompt := st.chat_input("Ask about genetic variants..."):
 
 # Footer
 st.divider()
-st.caption("GenetiXplorer Variant Predictor © 2025 | Built with Streamlit") 
+st.caption("GenetiXplorer Variant Predictor © 2025 | Built with Streamlit and cursor ") 
