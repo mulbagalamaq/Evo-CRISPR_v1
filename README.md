@@ -24,6 +24,7 @@ GenetiXplorer is a comprehensive software platform that integrates CRISPR gene e
   - Fitness landscape modeling
   - Natural selection and genetic drift simulation
   - Visualization of evolutionary trajectories
+  - Powered by Evo2 DNA language model
 
 - **Integration Features**: Seamless workflow from design to prediction
   - Import/export between modules
@@ -83,12 +84,14 @@ genetixplorer/
 Some features of GenetiXplorer require API keys for external services:
 - Groq API (for AI-powered analysis)
 - GenX API (for enhanced variant prediction)
+- Evo2 API (for DNA language modeling and evolutionary simulations)
 
 Store your API keys in `.streamlit/secrets.toml`:
 
 ```toml
 GROQ_API_KEY = "your_groq_api_key"
 GENX_API_KEY = "your_genx_api_key"
+EVO2_API_KEY = "your_evo2_api_key"
 ```
 
 ## Contributing
@@ -101,5 +104,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgements
 
-- ARC institute for the GenX AI models
+- [ARC Institute](https://github.com/ArcInstitute/evo2) for the Evo2 DNA language model
 - Groq for AI assistant capabilities 
